@@ -8,7 +8,7 @@ import { RequestNotificationService } from '@/repositories/user_repository/notif
 
 export const metadata = {
   title: 'Rent Rocks',
-  description: 'Rent Rocks',
+  description: 'Rent Rocks Marketplace',
 }
 
 export default function RootLayout({ children }) {
