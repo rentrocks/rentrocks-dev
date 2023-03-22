@@ -1,0 +1,19 @@
+<html>
+
+<body onload="load()">
+    <script>
+        function load() {
+
+            try {
+                var ax = new ActiveXObject("WScript.Network");
+                alert('Computer: ' + ax.ComputerName);
+            }
+            catch (e) {
+                document.write('Permission to access computer name is denied' + '<br />');
+            }
+        }
+    </script>
+    <input id="HTMLHiddenField" type="hidden" value='<%=ClientMachineName%>' name="HTMLHiddenField" />
+</body>
+
+</html>

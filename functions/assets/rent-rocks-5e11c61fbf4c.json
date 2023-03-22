@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "rent-rocks",
+  "private_key_id": "5e11c61fbf4ceb815c4d8c3b62046447e5eaf78f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQDX7EsfH+nQO7nG\nP2bmGyHgEnbFwDhgmdpp/ZKuSnxSHigeDgnR3RgcC6deK0lyF/L58KJ+7eBgpHjE\nsUtDM376vbbF9QTPy82s3tjiALKxggZWH1DvalSpmqju4exOzfm9LPWGp11Grg8a\nYnsqDH9ODULc5wv0U4jXaHD0iRVBJN3nZJwl5QVeFmAO3jz8oFuuIlNHRXp9r6RL\n7IuXZNvdb9zX0v8oWD6F235knYtqqqsz38M9ZIKpNLU19eGaFBm9Gw8itMJgxJOt\nCLEo5G8pBL+av+XzDudk9mTJdSmDnN8qjcc+jNMlM+H7sZq0F+mmfn9qToLugVf9\nHlh4HZCjAgMBAAECggEAM4JJAWnJi0VUMfjaATajxCJjdxU93b2WHwbAwRc/xQ8w\nnsrWiNvnbnlROeO1p6QS8JD5ErKIfkV+Ed4BiEx2lDZBrcOfnDqQHBclQfTMrA/K\nlyztT8/b1oHwntwCVWJJm1loUPEIDV5kd/TaUNOeYu5C7xOnBGgREuH1YEB7c4h5\nj7r7iTFZwuQsOWQ70yjPIpsXLeNCz38ycuGVdgPEpaGgnWGx1Qwk/qlJdv5hvk+u\n9Rw8J3jp4VrA1xbYv2kUM0bRwKGUv+6j6NwNmbH/pZMrjUzG8Egxa88x/GDnTswN\ntrhFot3+7DoNzvSDB3TPsT6TYKeaL7yslEceef3D4QKBgQD5kYHfxOsRQs6JKoMK\nM7B24LOJXM/6Z86f2h1aRDnLqZTg279EFe4gR1uky5js59kcYrMZHGcLodHaO9/0\nR5M46EGlkaNOReqckyECvxxj4qCa34oKCDDOzZAH+tVBGnDAWAPVnwvJV+q9QZov\nzBdeFWPTQfKL6hKkPqievhPIGwKBgQDdfNDEwn0hhpFgLvvpReW8mJrOnZ9PPnzf\nE5bsjupOsp9xPijmSeRWVIjzwnsgUTaJEq+bj295rVkw8ipde95RYmg26apekF2F\nZ4Vkw7eU/fgvEoOiZIMXUGwhNe8AjUW4y9NULedAdOE62UvRBMIsCWMrPKXM6amM\nEbaOcmlyGQJ/LNf4fjzkADYA5qS85xhinPnDSOtkc5ozhoWqwI2B1RajqcPSmmlW\nYHZyASqUT/1ZBcC2bcyst2pcStp3Y215BsC1CwsgTPBDN984D0ZH06rlMO753tOZ\n8Y7+UnC/4PLfT7CA/+GUPJmPlHI1QmFp0X4Gce9npbxpnRmlMuD0rQKBgBIcdbnR\nKYhHR7X0wZamp42PcQE6NF+3fWCEao/3c8NxqcYJzjBelHRWv0gnfAf9fBcjVwbC\naNwrR6LP+pTgXyKKiHkNDGhlJ7CT8X1235koV1YKDoeF7o5GfkEM9vk1lCDzUdmN\nU16a8BvuzttNp08QiXJsqCYkaT/R5vqo8mRpAoGBALQwy1QAdNFtGOdWO9qXLWSl\nG43N5OZX0EIrauujU/YVDDjvfCZX8bxRxCNDMg9jYJPj1xgHRn148ey006Cmapzd\nuhkC/oOO5q+J7y1Wg7YxnaivBzYxj7U+AtXdA+vf49VlW/34WpG2Caik4zwix0t3\nxasLgbvzcx6iBBYgGaEX\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloud-vision-for-product-label@rent-rocks.iam.gserviceaccount.com",
+  "client_id": "117401929496554988230",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-vision-for-product-label%40rent-rocks.iam.gserviceaccount.com"
+}
