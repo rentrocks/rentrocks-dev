@@ -37,7 +37,7 @@ export default function AddToCartButton({ productId }) {
     <div>
       <button
         onClick={handleAddToCart}
-        className={`px-5 py-2 w-full rounded-full hover:bg-gray-500  text-sm text-white font-semibold  ${isAlreadyAdded || isAdded ? "bg-slate-600 " : "bg-[#5842be]"
+        className={`px-5 py-2 w-full rounded-full hover:bg-pink-700  text-sm text-white font-semibold  ${isAlreadyAdded || isAdded ? "bg-pink-500 " : "bg-pink-600"
           }`}
       >
         {isLoading
@@ -46,9 +46,9 @@ export default function AddToCartButton({ productId }) {
             : "Adding ..."
           : isAdded || isAlreadyAdded
             ? "Added"
-            : "Add to cart"}
+            : "Add to Cart"}
       </button>
-      {error && <p className="text-sm text-red-600">{error}</p>}
+      {error && <p className="text-sm font-medium pt-2 text-pink-600">{error}</p>}
     </div>
   );
 }

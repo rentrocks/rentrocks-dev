@@ -11,7 +11,7 @@ export default function NotificationWidget() {
     }
     if (notificationList.length === 0) {
         return <>
-            <p>No Notification</p>
+            <p className="p-5 font-semibold">No Notification</p>
         </>
     }
     return <>
@@ -44,7 +44,7 @@ export function OldNotificationWidget() {
     }
     if (notificationList.length === 0) {
         return <>
-            <p>No Notification</p>
+            <p className="p-5 font-semibold">No Notification</p>
         </>
     }
     return <>

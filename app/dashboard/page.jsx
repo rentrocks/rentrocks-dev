@@ -4,7 +4,7 @@ import { useAuth } from "@/contexts/authContext";
 export default function Dashboard() {
     const { currentUser, logout } = useAuth()
     return <>
-        <>HOme Page</>
+        <>HOme Page-{currentUser.email}</>
     </>
 }
 

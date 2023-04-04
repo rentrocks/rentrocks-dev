@@ -1,18 +1,25 @@
 import { Product } from "@/repositories/product_repository/models/products";
+import { getPublicProductList } from "@/repositories/product_repository/productsRepository";
 import Link from "next/link";
+import ProductCard from "../product_card/ProductCard";
 
-export default function ProductPage({ productData }) {
+export default async function ProductPage({ productData }) {
     const product = Product.getCopyProduct(productData)
+    const productListRes = getPublicProductList();
+    const [productList] = await Promise.all([productListRes]);
+
+
     return (
         <>
             <section className="text-gray-600 body-font overflow-hidden">
-                <div className="container px-5 py-24 mx-auto">
-                    <div className="lg:w-4/5 mx-auto flex flex-wrap">
+                <div className="container px-5 py-4 mx-auto">
+                    <div className="lg:w-4/5 mx-auto flex flex-wrap pb-2">
                         <img
                             alt="ecommerce"
-                            className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                            className="lg:w-1/2 w-full lg:h-96 mt-8 h-64 object-cover object-center rounded"
                             src={product?.photoList[0] ? product?.photoList[0] : "/empty-product-image.png"}
-                        />                        <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                        />
+                        <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                             <h1 className="text-gray-900 text-3xl title-font mb-2 font-semibold">{product.productName}</h1>
                             <p className="text-sm  text-gray-500  font-semibold mb-2">{product.description}</p>
                             <div className="flex mb-4">
@@ -114,6 +121,13 @@ export default function ProductPage({ productData }) {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <h1 className="text-lg font-bold leading-6 text-gray-600 capitalize relative pb-4">SIMILAR PRODUCTS</h1>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        {/* Todo Now */}
+                        {productList.map((e) => {
+                            return <ProductCard key={e.productId} productData={e} />;
+                        })}
                     </div>
                 </div>
             </section>

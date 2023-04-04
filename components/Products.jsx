@@ -10,7 +10,7 @@ export default async function Products() {
 
   return (
     <>
-      <section className="w-fit mx-auto grid grid-cols-2 lg:grid-cols-4 md:grid-cols-4 justify-items-center justify-center gap-x-3 mt-10 mb-5">
+      <section className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
         {productList.map((e) => {
           return <ProductCard key={e.productId} productData={e} />;
         })}

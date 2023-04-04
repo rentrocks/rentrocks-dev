@@ -74,7 +74,7 @@ const Bottombar = () => {
                     </svg>
                 </div>
                 <div className="box flex justify-center items-center w-1/4 cursor-pointer">
-                    <Link href="/signIn">
+                    <Link href="/dashboard">
                         <svg
                             stroke="currentColor"
                             fill="currentColor"

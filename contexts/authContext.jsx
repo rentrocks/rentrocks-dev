@@ -11,7 +11,9 @@ export function AuthProvider({ children }) {
     const router = useRouter();
 
     useEffect(() => {
+        console.log(">>>>>>>>>>>>>>");
         const unsubscribe = auth.onAuthStateChanged(user => {
+            console.log(user);
             setCurrentUser(user);
             setIsLoading(false);
         });
@@ -26,7 +28,9 @@ export function AuthProvider({ children }) {
             console.error(error);
             alert(error.message)
         }
-    }; const loginWithGoogleProvider = async () => {
+    };
+
+    const loginWithGoogleProvider = async () => {
         try {
             await signInWithPopup(auth, new GoogleAuthProvider());
             router.push('/dashboard')

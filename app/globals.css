@@ -9,3 +9,44 @@
       font-family: Proxima Nova, system-ui, sans-serif;
     }
   }
+
+  .ReactModal__Overlay {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  
+  /* .relative:hover span {
+    transform: scaleX(100%);
+  }
+  
+  button:hover {
+  transform: scale(1.05);
+}
+
+button:hover span {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */

@@ -2,22 +2,72 @@ function CheckoutOrderSummary({ product }) {
     return (
         <div className="px-4 pt-8">
             <p className="text-xl font-medium">Order Summary</p>
-            <p className="text-gray-400">Check your items. And select a suitable shipping method.</p>
-            <div className="mt-8 space-y-3 rounded-lg border bg-white px-2 py-4 sm:px-6 h-72 overflow-y-scroll">
-                <div className="flex flex-col rounded-lg bg-white sm:flex-row">
-                    <img className="m-2 h-24 w-28 rounded-md border object-cover object-center" src={
-                        product.photoList[0]
-                            ? product.photoList[0]
-                            : "/empty-product-image.png"
-                    } alt="" />
-                    <div className="flex w-full flex-col px-4 py-4">
-                        <span className="font-semibold">{product.productName}</span>
-                        <span className="float-right text-gray-400">{product.description}</span>
-                        <p className="text-lg font-bold">₹ {product.price}</p>
+            <p className="text-gray-500 font-semibold text-base">Check your items. And proceed to a suitable shipping method.</p>
+            <div className="mt-8 space-y-3 rounded-lg border bg-white px-2 py-4 sm:px-6 h-4/6 overflow-y-scroll">
+                <div className="flex flex-col rounded-lg bg-white">
+                    <div className="flex">
+                        <img
+                            className="m-2 h-24 w-28 rounded-md border object-cover object-center self-center sm:self-auto order-last sm:order-first"
+                            src={product.photoList[0] || "/empty-product-image.png"}
+                            alt=""
+                        />
+                        <div className="flex w-full flex-col px-4 py-4">
+                            <span className="font-semibold text-lg text-gray-800">{product.productName}</span>
+                            <span className="float-right font-medium text-gray-600">{product.description}</span>
+                            <p className="text-lg font-bold">₹ {product.price}</p>
+                        </div>
+                    </div>
+                    <div className="flex">
+                        <img
+                            className="m-2 h-24 w-28 rounded-md border object-cover object-center self-center sm:self-auto order-last sm:order-first"
+                            src={product.photoList[0] || "/empty-product-image.png"}
+                            alt=""
+                        />
+                        <div className="flex w-full flex-col px-4 py-4">
+                            <span className="font-semibold text-lg text-gray-800">{product.productName}</span>
+                            <span className="float-right font-medium text-gray-600">{product.description}</span>
+                            <p className="text-lg font-bold">₹ {product.price}</p>
+                        </div>
+                    </div>
+                    <div className="flex">
+                        <img
+                            className="m-2 h-24 w-28 rounded-md border object-cover object-center self-center sm:self-auto order-last sm:order-first"
+                            src={product.photoList[0] || "/empty-product-image.png"}
+                            alt=""
+                        />
+                        <div className="flex w-full flex-col px-4 py-4">
+                            <span className="font-semibold text-lg text-gray-800">{product.productName}</span>
+                            <span className="float-right font-medium text-gray-600">{product.description}</span>
+                            <p className="text-lg font-bold">₹ {product.price}</p>
+                        </div>
+                    </div>
+                    <div className="flex">
+                        <img
+                            className="m-2 h-24 w-28 rounded-md border object-cover object-center self-center sm:self-auto order-last sm:order-first"
+                            src={product.photoList[0] || "/empty-product-image.png"}
+                            alt=""
+                        />
+                        <div className="flex w-full flex-col px-4 py-4">
+                            <span className="font-semibold text-lg text-gray-800">{product.productName}</span>
+                            <span className="float-right font-medium text-gray-600">{product.description}</span>
+                            <p className="text-lg font-bold">₹ {product.price}</p>
+                        </div>
+                    </div>
+                    <div className="flex">
+                        <img
+                            className="m-2 h-24 w-28 rounded-md border object-cover object-center self-center sm:self-auto order-last sm:order-first"
+                            src={product.photoList[0] || "/empty-product-image.png"}
+                            alt=""
+                        />
+                        <div className="flex w-full flex-col px-4 py-4">
+                            <span className="font-semibold text-lg text-gray-800">{product.productName}</span>
+                            <span className="float-right font-medium text-gray-600">{product.description}</span>
+                            <p className="text-lg font-bold">₹ {product.price}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
             {/* <p className="mt-8 text-lg font-medium">Shipping Methods</p>
                     <form className="mt-5 grid gap-6">
                         <div className="relative">

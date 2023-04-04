@@ -18,6 +18,7 @@ export function UserProvider({ children }) {
 
     useEffect(() => {
         if (!currentUser) {
+            setIsLoading(false)
             return;
         }
         const unsubscribe = onSnapshot(doc(db, `users/${currentUser.uid}`), (snapshot) => {
