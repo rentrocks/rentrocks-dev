@@ -23,7 +23,6 @@ export const AddCurrentLocation = () => {
             kIsWeb: true,
             timestamp: serverTimestamp(),
         })
-
         await setDoc(docRef, userLocation.toJson());
     };
 
@@ -42,7 +41,6 @@ export const AddCurrentLocation = () => {
             addLocation(location);
         }
     }, [location]);
-
 }
 
 export const userOrderListSnapshot = (userId) => {

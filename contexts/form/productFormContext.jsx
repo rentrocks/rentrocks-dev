@@ -224,7 +224,6 @@ export function ProductFormProvider({ children }) {
             alert(error.message)
             setImageUploading(false);
         }
-
     }
 
     const isReadyForFinalSubmit = () => {

@@ -75,13 +75,18 @@ export const addProductToFavorites = async (user, productId) => {
     user.favoritesProducts = cart;
     await setDoc(ref, user.toJson(), { merge: true });
 }
+
 export const removeProductToFavorites = async (user, productId) => {
     const ref = doc(db, `users/${user.uid}`);
-    const cart = user.favoritesProducts ?? [];
-    cart.filter((id) => id != productId)
-    user.favoritesProducts = cart;
-    await setDoc(ref, user.toJson(), { merge: true });
+    let favorites = user.favoritesProducts ?? [];
+    favorites = favorites.filter((id) => {
+        return id != productId;
+    })
+    user.favoritesProducts = favorites;
+    await setDoc(ref, { favoritesProducts: favorites }, { merge: true });
 }
+
+
 
 export const setUserOrder = async ({
     productId,

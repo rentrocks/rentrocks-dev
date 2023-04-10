@@ -4,114 +4,51 @@ import Link from "next/link";
 export default function MyProductCard({ productData }) {
     const product = Product.getCopyProduct(productData)
     return (
-        <div className="p-4 sm:mb-0 mb-6">
-            <Link href={`/${product.productId}`}>
-                <div className="relative max-w-full h-64 rounded-md">
-                    <img
-                        alt="content"
-                        className="object-cover h-full w-full rounded-md"
-                        src={
-                            product.photoList[0]
-                                ? product.photoList[0]
-                                : "/empty-product-image.png"
-                        }
-                    />
-                </div>
-                <div className="flex justify-between items-start">
-                    <div>
-                        <h2 className="text-xl font-medium text-gray-900 pt-3">
-                            {product.productName}
-                        </h2>
-                        <p className="text-sm font-semibold text-gray-500">
-                            {product.description}
-                        </p>
+                   <tbody class="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
+              <tr>
+                <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+                  <div class="inline-flex items-center gap-x-3">
+                    <input type="checkbox" class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700" />
+                    <div class="flex items-center gap-x-2">
+                      <img class="object-cover w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt />
+                      <div>
+                        <h2 class="font-medium text-gray-800 dark:text-white ">Arthur Melo</h2>
+                        <p class="text-sm font-normal text-gray-600 dark:text-gray-400">@authurmelo</p>
+                      </div>
                     </div>
-                    <div className="pt-3 font-semibold">₹ {product.price}</div>
-                </div>
-                <div className="pt-2 flex items-center">
-                    <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 100 100"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <polygon
-                            points="50,10 65,40 95,40 70,60 80,90 50,75 20,90 30,60 5,40 35,40"
-                            style={{ fill: "green", stroke: "green", strokeWidth: 1 }}
-                        />
-                    </svg>
-                    <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 100 100"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <polygon
-                            points="50,10 65,40 95,40 70,60 80,90 50,75 20,90 30,60 5,40 35,40"
-                            style={{ fill: "green", stroke: "green", strokeWidth: 1 }}
-                        />
-                    </svg>
-                    <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 100 100"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <polygon
-                            points="50,10 65,40 95,40 70,60 80,90 50,75 20,90 30,60 5,40 35,40"
-                            style={{ fill: "green", stroke: "green", strokeWidth: 1 }}
-                        />
-                    </svg>
-                    <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 100 100"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <polygon
-                            points="50,10 65,40 95,40 70,60 80,90 50,75 20,90 30,60 5,40 35,40"
-                            style={{ fill: "green", stroke: "green", strokeWidth: 1 }}
-                        />
-                    </svg>
-                    <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 100 100"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <polygon
-                            points="50,10 65,40 95,40 70,60 80,90 50,75 20,90 30,60 5,40 35,40"
-                            style={{ fill: "green", stroke: "green", strokeWidth: 1 }}
-                        />
-                    </svg>
-                    <div>
-                        <p className="text-sm font-semibold text-gray-500 pl-5">
-                            4.5 star rating
-                        </p>
-                    </div>
-                </div>
-            </Link>
-            <div className="pt-3 w-full flex flex-col md:flex-row justify-between">
-                {product.isAvailable && <button onClick={() => {
-                    setUserProductAvailability({
-                        userId: product.userId,
-                        productId: product.productId,
-                        isAvailable: false,
-                    })
-                }} className="bg-red-500 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded">
-                    Set As Not Available
-                </button>}
-                {!product.isAvailable && <button onClick={() => {
-                    setUserProductAvailability({
-                        userId: product.userId,
-                        productId: product.productId,
-                        isAvailable: true,
-                    })
-                }} className="bg-green-500 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded">
-                    Set As Available
-                </button>}
-            </div>
-        </div>
+                  </div>
+                </td>
+                <td class="px-12 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+                  <div class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 bg-emerald-100/60 dark:bg-gray-800">
+                    <span class="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                    <h2 class="text-sm font-normal text-emerald-500">Active</h2>
+                  </div>
+                </td>
+                <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Design Director</td>
+                <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">authurmelo@example.com</td>
+                <td class="px-4 py-4 text-sm whitespace-nowrap">
+                  <div class="flex items-center gap-x-2">
+                    <p class="px-3 py-1 text-xs text-indigo-500 rounded-full dark:bg-gray-800 bg-indigo-100/60">Design</p>
+                    <p class="px-3 py-1 text-xs text-blue-500 rounded-full dark:bg-gray-800 bg-blue-100/60">Product</p>
+                    <p class="px-3 py-1 text-xs text-pink-500 rounded-full dark:bg-gray-800 bg-pink-100/60">Marketing</p>
+                  </div>
+                </td>
+                <td class="px-4 py-4 text-sm whitespace-nowrap">
+                  <div class="flex items-center gap-x-6">
+                    <button class="text-gray-500 transition-colors duration-200 dark:hover:text-red-500 dark:text-gray-300 hover:text-red-500 focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                      </svg>
+                    </button>
+                    <button class="text-gray-500 transition-colors duration-200 dark:hover:text-yellow-500 dark:text-gray-300 hover:text-yellow-500 focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                      </svg>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
     );
 };
 

@@ -146,6 +146,11 @@ export class Product {
     };
   }
 
+  
+  static get empty() {
+    return new Product();
+  }
+  
   static getCopyProduct(product) {
     return new Product(
       {
@@ -182,10 +187,7 @@ export class Product {
     )
   }
 
-  static get empty() {
-    return new Product();
-  }
-
+  
   isEmpty() {
     return this.productId === "" && this.productName === "";
   }

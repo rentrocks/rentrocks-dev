@@ -22,11 +22,11 @@ export default function MyOrders() {
 
     return (
         <>
-            <section className="w-fit mx-auto grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 justify-items-center justify-center gap-x-6 mt-10 mb-5">
+      <section className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
                 {orderList.map((e) => {
                     return <div>
                         <ProductCardFromId id={e.productId} />
-                        <h1>Order Id : {e.orderId}</h1>
+                        {/* <h1>Order Id : {e.orderId}</h1> */}
                     </div>
                 })}
             </section>

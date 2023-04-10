@@ -29,6 +29,7 @@ export const setUserProduct = async ({ product, userId }) => {
     product.withNewId(newProductId);
     await setDoc(docRef, product.toJson());
 }
+
 export const setUserProductAvailability = async ({ productId, userId, isAvailable }) => {
     const docRef = doc(db, `users/${userId}/my_products/${productId}`)
     await updateDoc(docRef, { isAvailable: isAvailable });
