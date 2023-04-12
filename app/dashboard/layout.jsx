@@ -72,38 +72,38 @@ export default function Layout({ children }) {
             </div> */}
 
 <div className="hidden md:block">
-<aside class="flex flex-col w-80 h-screen px-4 py-8 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700">
-    <div class="flex flex-col items-center mt-6 -mx-2">
-        <img class="object-cover w-24 h-24 mx-2 rounded-full"src={user.photoURL} alt="avatar"/>
-        <h4 class="mx-2 mt-2 font-medium text-gray-800 dark:text-gray-200">{user.displayName}</h4>
-        <p class="mx-2 mt-1 text-sm font-medium text-gray-600 dark:text-gray-400">{user.email}</p>
+<aside className="flex flex-col w-80 h-screen px-4 py-8 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700">
+    <div className="flex flex-col items-center mt-6 -mx-2">
+        <img className="object-cover w-24 h-24 mx-2 rounded-full"src={user.photoURL} alt="avatar"/>
+        <h4 className="mx-2 mt-2 font-medium text-gray-800 dark:text-gray-200">{user.displayName}</h4>
+        <p className="mx-2 mt-1 text-sm font-medium text-gray-600 dark:text-gray-400">{user.email}</p>
     </div>
 
-    <div class="flex flex-col justify-between flex-1 mt-6">
+    <div className="flex flex-col justify-between flex-1 mt-6">
         <nav>
-            <Link href={'/dashboard'} class={pathname !== '/dashboard' ? `flex items-center px-4 py-2 text-gray-700  rounded-lg` : `flex items-center px-4 py-2 text-gray-700 bg-gray-300 rounded-lg`}>
+            <Link href={'/dashboard'} className={pathname !== '/dashboard' ? `flex items-center px-4 py-2 text-gray-700  rounded-lg` : `flex items-center px-4 py-2 text-gray-700 bg-gray-300 rounded-lg`}>
             <HomeIcon className="w-5 h-5" />
-                <span class="mx-4 font-medium">Home</span>
+                <span className="mx-4 font-medium">Home</span>
             </Link>
 
-            <Link href={'/dashboard/orders'} class={pathname !== '/dashboard/orders' ? `flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700`:`flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700 bg-gray-100`}>
+            <Link href={'/dashboard/orders'} className={pathname !== '/dashboard/orders' ? `flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700`:`flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700 bg-gray-100`}>
             <ShoppingCartIcon className="w-5 h-5" />
-                <span class="mx-4 font-medium">My Orders</span>
+                <span className="mx-4 font-medium">My Orders</span>
             </Link>
 
-            <Link href={'/dashboard/my-products'} class={pathname !== '/dashboard/my-products' ? `flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700`:`flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700 bg-gray-100`}>
+            <Link href={'/dashboard/my-products'} className={pathname !== '/dashboard/my-products' ? `flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700`:`flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700 bg-gray-100`}>
             <TagIcon className="w-5 h-5" />
-                <span class="mx-4 font-medium">My Products</span>
+                <span className="mx-4 font-medium">My Products</span>
             </Link>
 
-            <Link href={'/dashboard/faqs'} class={pathname !== '/dashboard/faqs' ? `flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700`:`flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700 bg-gray-100`}>
+            <Link href={'/dashboard/faqs'} className={pathname !== '/dashboard/faqs' ? `flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700`:`flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700 bg-gray-100`}>
             <QuestionMarkCircleIcon className="w-5 h-5" />
-                <span class="mx-4 font-medium">F&Qs</span>
+                <span className="mx-4 font-medium">F&Qs</span>
             </Link>
 
-            <Link href={'/dashboard/contact-us'} class={pathname !== '/dashboard/contact-us' ? `flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700`:`flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700 bg-gray-100`}>
+            <Link href={'/dashboard/contact-us'} className={pathname !== '/dashboard/contact-us' ? `flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700`:`flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700 bg-gray-100`}>
             <ChatBubbleOvalLeftIcon className="w-5 h-5" />
-                <span class="mx-4 font-medium">Contact Us</span>
+                <span className="mx-4 font-medium">Contact Us</span>
             </Link>
 
             <button onClick={() => { logout() }} className="flex gap-2 mt-5 items-center px-4 w-full py-2 cursor-pointer rounded-lg hover:bg-red-400 bg-red-500 text-white">

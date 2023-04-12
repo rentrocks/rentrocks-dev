@@ -2,7 +2,7 @@
 
 var crypto = require('crypto');
 
-class PaytmChecksum {
+className PaytmChecksum {
 
 	static encrypt(input, key) {
 		var cipher = crypto.createCipheriv('AES-128-CBC', key, PaytmChecksum.iv);

@@ -43,7 +43,7 @@ export default function AddToFavButton({ productId }) {
     return (
         <div>
             <button onClick={handleAddToFav}
-                class="absolute top-0 right-0 m-2 p-2 bg-transparent rounded-full">
+                className="absolute top-0 right-0 m-2 p-2 bg-transparent rounded-full">
 
                 {isLoading
                     ? isAdded

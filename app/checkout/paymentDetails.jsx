@@ -38,7 +38,7 @@ function PaymentDetails({ product, onClickPayButton }) {
                         <input type="text" id="billing-address" name="billing-address" className="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="Street Address" />
                         <div className="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
                             {/* <img className="h-4 w-4 object-contain" src="https://flagpack.xyz/_nuxt/4c829b6c0131de7162790d2f897a90fd.svg" alt="" /> */}
-                            <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                                 <path d="M12 2c-4.97 0-9 4.03-9 9 0 5.25 8.18 12.35 8.5 12.68a1.002 1.002 0 0 0 1.41 0C12.82 23.35 21 16.25 21 11c0-4.97-4.03-9-9-9zm0 14.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" />
                                 <path d="M0 0h24v24H0z" fill="none" />
                             </svg>
