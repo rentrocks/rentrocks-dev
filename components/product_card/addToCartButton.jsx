@@ -20,6 +20,7 @@ export default function AddToCartButton({ productId }) {
     }
     setError(null);
     setIsLoading(true);
+
     try {
       if (isAlreadyAdded) {
         await removeProductFromCart(user, productId);

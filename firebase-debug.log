@@ -1,0 +1,100 @@
+[debug] [2023-04-10T14:04:37.112Z] ----------------------------------------------------------------------
+[debug] [2023-04-10T14:04:37.113Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aalim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-04-10T14:04:37.114Z] CLI Version:   11.25.3
+[debug] [2023-04-10T14:04:37.114Z] Platform:      win32
+[debug] [2023-04-10T14:04:37.114Z] Node Version:  v18.12.1
+[debug] [2023-04-10T14:04:37.114Z] Time:          Mon Apr 10 2023 19:34:37 GMT+0530 (India Standard Time)
+[debug] [2023-04-10T14:04:37.114Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-10T14:04:37.169Z] Object ".storage" in "firebase.json" is missing required property: {"missingProperty":"rules"}
+[debug] [2023-04-10T14:04:37.170Z] Field ".storage" in "firebase.json" is possibly invalid: should be array
+[debug] [2023-04-10T14:04:37.170Z] Field ".storage" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2023-04-10T14:04:37.173Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-10T14:04:37.174Z] > authorizing via signed-in user (rocksrent@gmail.com)
+[debug] [2023-04-10T14:04:37.174Z] [iam] checking project rent-rocks for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2023-04-10T14:04:37.175Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/rent-rocks:testIamPermissions [none]
+[debug] [2023-04-10T14:04:37.175Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/rent-rocks:testIamPermissions x-goog-quota-user=projects/rent-rocks
+[debug] [2023-04-10T14:04:37.176Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rent-rocks:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-04-10T14:04:39.156Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/rent-rocks:testIamPermissions 200
+[debug] [2023-04-10T14:04:39.157Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rent-rocks:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-04-10T14:04:39.157Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/rent-rocks/serviceAccounts/rent-rocks@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-04-10T14:04:39.157Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/rent-rocks/serviceAccounts/rent-rocks@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-04-10T14:04:46.386Z] ----------------------------------------------------------------------
+[debug] [2023-04-10T14:04:46.387Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aalim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2023-04-10T14:04:46.388Z] CLI Version:   11.25.3
+[debug] [2023-04-10T14:04:46.388Z] Platform:      win32
+[debug] [2023-04-10T14:04:46.388Z] Node Version:  v18.12.1
+[debug] [2023-04-10T14:04:46.388Z] Time:          Mon Apr 10 2023 19:34:46 GMT+0530 (India Standard Time)
+[debug] [2023-04-10T14:04:46.388Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-10T14:04:46.437Z] Object ".storage" in "firebase.json" is missing required property: {"missingProperty":"rules"}
+[debug] [2023-04-10T14:04:46.437Z] Field ".storage" in "firebase.json" is possibly invalid: should be array
+[debug] [2023-04-10T14:04:46.437Z] Field ".storage" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2023-04-10T14:04:46.441Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-10T14:04:46.441Z] > authorizing via signed-in user (rocksrent@gmail.com)
+[debug] [2023-04-10T14:04:46.441Z] [iam] checking project rent-rocks for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-04-10T14:04:46.443Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/rent-rocks:testIamPermissions [none]
+[debug] [2023-04-10T14:04:46.443Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/rent-rocks:testIamPermissions x-goog-quota-user=projects/rent-rocks
+[debug] [2023-04-10T14:04:46.443Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rent-rocks:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-10T14:04:48.094Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/rent-rocks:testIamPermissions 200
+[debug] [2023-04-10T14:04:48.095Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rent-rocks:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-10T14:04:48.095Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rent-rocks [none]
+[debug] [2023-04-10T14:04:48.750Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rent-rocks 200
+[debug] [2023-04-10T14:04:48.750Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rent-rocks {"projectId":"rent-rocks","projectNumber":"759429873823","displayName":"rent-rocks","name":"projects/rent-rocks","resources":{"hostingSite":"rent-rocks","realtimeDatabaseInstance":"rent-rocks-default-rtdb","storageBucket":"rent-rocks.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_71e846f5-99d4-4c2b-bc61-134b556dc9e9"}
+[debug] [2023-04-10T14:04:51.670Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/rent-rocks/sites pageToken=&pageSize=10
+[debug] [2023-04-10T14:04:53.244Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/rent-rocks/sites 200
+[debug] [2023-04-10T14:04:53.244Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/rent-rocks/sites {"sites":[{"name":"projects/rent-rocks/sites/rent-rocks","defaultUrl":"https://rent-rocks.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-04-10T14:04:53.244Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/rent-rocks/sites 
+[debug] [2023-04-10T14:04:54.769Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/rent-rocks/sites 200
+[debug] [2023-04-10T14:04:54.770Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/rent-rocks/sites {"sites":[{"name":"projects/rent-rocks/sites/rent-rocks","defaultUrl":"https://rent-rocks.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-04-10T14:04:54.771Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rent-rocks/webApps/-/config [none]
+[debug] [2023-04-10T14:04:56.202Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rent-rocks/webApps/-/config 200
+[debug] [2023-04-10T14:04:56.202Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rent-rocks/webApps/-/config {"projectId":"rent-rocks","appId":"1:759429873823:web:fefb37fdcdee734239e2aa","databaseURL":"https://rent-rocks-default-rtdb.firebaseio.com","storageBucket":"rent-rocks.appspot.com","locationId":"us-central","apiKey":"AIzaSyDxOdEND8_wuHDIhJ-Pl4d6V7G1--5I-jE","authDomain":"rent-rocks.firebaseapp.com","messagingSenderId":"759429873823","measurementId":"G-FJRWXRQXHS"}
+[debug] [2023-04-10T14:05:23.920Z] Error: Build failed because of webpack errors
+    at webpackBuildImpl (C:\Users\Aalim\Desktop\rent-rocks-dev\rentrocks-dev\node_modules\next\dist\build\webpack-build.js:245:21)
+    at async Object.webpackBuild (C:\Users\Aalim\Desktop\rent-rocks-dev\rentrocks-dev\node_modules\next\dist\build\webpack-build.js:373:16)
+    at async C:\Users\Aalim\Desktop\rent-rocks-dev\rentrocks-dev\node_modules\next\dist\build\index.js:488:77
+    at async Span.traceAsyncFn (C:\Users\Aalim\Desktop\rent-rocks-dev\rentrocks-dev\node_modules\next\dist\trace\trace.js:79:20)
+    at async build (C:\Users\Aalim\Desktop\rent-rocks-dev\rentrocks-dev\node_modules\next\dist\build\index.js:73:29)
+    at async build (C:\Users\Aalim\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:55:5)
+    at async prepareFrameworks (C:\Users\Aalim\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:261:108)
+    at async deploy (C:\Users\Aalim\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-04-10T14:06:38.701Z] ----------------------------------------------------------------------
+[debug] [2023-04-10T14:06:38.702Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Aalim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2023-04-10T14:06:38.702Z] CLI Version:   11.25.3
+[debug] [2023-04-10T14:06:38.703Z] Platform:      win32
+[debug] [2023-04-10T14:06:38.703Z] Node Version:  v18.12.1
+[debug] [2023-04-10T14:06:38.703Z] Time:          Mon Apr 10 2023 19:36:38 GMT+0530 (India Standard Time)
+[debug] [2023-04-10T14:06:38.703Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-10T14:06:38.753Z] Object ".storage" in "firebase.json" is missing required property: {"missingProperty":"rules"}
+[debug] [2023-04-10T14:06:38.753Z] Field ".storage" in "firebase.json" is possibly invalid: should be array
+[debug] [2023-04-10T14:06:38.753Z] Field ".storage" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2023-04-10T14:06:38.757Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-10T14:06:38.757Z] > authorizing via signed-in user (rocksrent@gmail.com)
+[debug] [2023-04-10T14:06:38.757Z] [iam] checking project rent-rocks for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-04-10T14:06:38.758Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/rent-rocks:testIamPermissions [none]
+[debug] [2023-04-10T14:06:38.758Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/rent-rocks:testIamPermissions x-goog-quota-user=projects/rent-rocks
+[debug] [2023-04-10T14:06:38.759Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rent-rocks:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-10T14:06:40.318Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/rent-rocks:testIamPermissions 200
+[debug] [2023-04-10T14:06:40.318Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rent-rocks:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-10T14:06:40.319Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rent-rocks [none]
+[debug] [2023-04-10T14:06:40.992Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rent-rocks 200
+[debug] [2023-04-10T14:06:40.992Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rent-rocks {"projectId":"rent-rocks","projectNumber":"759429873823","displayName":"rent-rocks","name":"projects/rent-rocks","resources":{"hostingSite":"rent-rocks","realtimeDatabaseInstance":"rent-rocks-default-rtdb","storageBucket":"rent-rocks.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_71e846f5-99d4-4c2b-bc61-134b556dc9e9"}
+[debug] [2023-04-10T14:06:43.794Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/rent-rocks/sites pageToken=&pageSize=10
+[debug] [2023-04-10T14:06:45.819Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/rent-rocks/sites 200
+[debug] [2023-04-10T14:06:45.819Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/rent-rocks/sites {"sites":[{"name":"projects/rent-rocks/sites/rent-rocks","defaultUrl":"https://rent-rocks.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-04-10T14:06:45.819Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/rent-rocks/sites 
+[debug] [2023-04-10T14:06:47.213Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/rent-rocks/sites 200
+[debug] [2023-04-10T14:06:47.214Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/rent-rocks/sites {"sites":[{"name":"projects/rent-rocks/sites/rent-rocks","defaultUrl":"https://rent-rocks.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-04-10T14:06:47.214Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/rent-rocks/webApps/-/config [none]
+[debug] [2023-04-10T14:06:48.453Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/rent-rocks/webApps/-/config 200
+[debug] [2023-04-10T14:06:48.453Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/rent-rocks/webApps/-/config {"projectId":"rent-rocks","appId":"1:759429873823:web:fefb37fdcdee734239e2aa","databaseURL":"https://rent-rocks-default-rtdb.firebaseio.com","storageBucket":"rent-rocks.appspot.com","locationId":"us-central","apiKey":"AIzaSyDxOdEND8_wuHDIhJ-Pl4d6V7G1--5I-jE","authDomain":"rent-rocks.firebaseapp.com","messagingSenderId":"759429873823","measurementId":"G-FJRWXRQXHS"}
+[debug] [2023-04-10T14:07:15.579Z] TypeError: Cannot read properties of null (reading 'endsWith')
+    at ɵcodegenPublicDirectory (C:\Users\Aalim\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:206:56)
+    at async prepareFrameworks (C:\Users\Aalim\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:269:13)
+    at async deploy (C:\Users\Aalim\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.

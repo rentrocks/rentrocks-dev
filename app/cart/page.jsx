@@ -1,3 +1,4 @@
+'use client'
 import { Fragment, useEffect, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import { ArrowPathIcon, ArrowRightOnRectangleIcon, Bars3Icon, BellAlertIcon, ChartPieIcon, ChatBubbleLeftEllipsisIcon, CursorArrowRaysIcon, FingerPrintIcon, ChatBubbleOvalLeftIcon, SquaresPlusIcon, UserIcon, XMarkIcon, HomeIcon, QuestionMarkCircleIcon, ShoppingCartIcon, TagIcon } from '@heroicons/react/24/outline'
