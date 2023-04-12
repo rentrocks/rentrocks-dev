@@ -8,13 +8,13 @@ import { getDatabase } from "firebase/database";
 import { getMessaging, isSupported } from 'firebase/messaging';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDxOdEND8_wuHDIhJ-Pl4d6V7G1--5I-jE",
-    authDomain: "rent-rocks.firebaseapp.com",
-    projectId: "rent-rocks",
-    storageBucket: "rent-rocks.appspot.com",
-    messagingSenderId: "759429873823",
-    appId: "1:759429873823:web:fefb37fdcdee734239e2aa",
-    measurementId: "G-FJRWXRQXHS"
+    apiKey: process.env.PUBLIC_NEXT_API_KEY,
+    authDomain: process.env.PUBLIC_NEXT_AUTHDOMAIN,
+    projectId: process.env.PUBLIC_NEXT_PROJECTID,
+    storageBucket: process.env.PUBLIC_NEXT_STORAGE_BUCKET,
+    messagingSenderId: process.env.PUBLIC_NEXT_MESSAGEING_SENDER_ID,
+    appId: process.env.PUBLIC_NEXT_APP_ID,
+    measurementId: process.env.PUBLIC_NEXT_MEASUREMENT_ID,
 };
 
 if (getApps.length.length === 0) {
